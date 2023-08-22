@@ -62,7 +62,7 @@ const Login = () => {
   };
 
   return (
-    <FormContainer>
+    <FormContainer onSubmit={handleSubmit}>
       <HFFLogo onClick={goToMain} width={'64px'} height={'64px'} />
       <InputContainer>
         <LargeInput
@@ -92,7 +92,7 @@ const Login = () => {
       </InputContainer>
       <AuthHelper />
       <ButtonContainer>
-        <Button type="button" onClick={handleSubmit}>
+        <Button type="submit" onClick={handleSubmit}>
           로그인
         </Button>
       </ButtonContainer>

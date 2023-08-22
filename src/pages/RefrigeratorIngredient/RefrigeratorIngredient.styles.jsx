@@ -25,6 +25,10 @@ const Ingredient = styled.div`
     height: 4.725rem;
     border: ${({ selected }) => (selected ? '3px solid #a5ce55' : 'none')};
     border-radius: 50%;
+    @media only screen and (max-width: 768px) {
+      width: 3rem;
+      height: 3rem;
+    }
   }
   transition: all 0.4s ease;
 `;

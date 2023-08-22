@@ -13,11 +13,13 @@ const Button = styled.button`
   border-radius: 2rem;
   cursor: pointer;
   font-size: 1.3rem;
+  transform: none;
+  transition: all 0.3s ease-in-out;
   &:hover {
     transform: scale(1.1);
   }
   @media only screen and (max-width: 768px) {
-    font-size: 0.2rem;
+    font-size: 0.8rem;
     white-space: nowrap;
   }
 `;
