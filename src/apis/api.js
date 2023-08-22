@@ -1,7 +1,10 @@
 import Axios from 'axios';
 import { getAuthToken } from 'utils/Auth';
 
-const baseURL = process.env.REACT_APP_API_URL;
+const baseURL =
+  window.location.hostname === 'localhost'
+    ? process.env.REACT_APP_API_URL
+    : 'api';
 
 const axios = Axios.create({
   baseURL,
