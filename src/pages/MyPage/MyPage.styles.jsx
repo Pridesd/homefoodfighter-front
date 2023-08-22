@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const Setting = styled.div`
-margin-left: 41rem;
-color: white;
-  `;
-
 export const MyPage = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -25,7 +20,6 @@ export const MyPageItem = styled(Link)`
   color: #000;
   text-decoration: none;
   padding-left: 2rem;
-
 `;
 
 export const MyPageImage = styled(Link)`

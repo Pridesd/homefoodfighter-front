@@ -24,8 +24,8 @@ const InputContainer = styled.div`
 
 const ErrorMessage = styled.p`
   color: red;
-  font-size: 2px;
   margin-left: 1rem;
+  font-size: 0.725rem;
 `;
 
 const CheckBoxWrapper = styled.label`

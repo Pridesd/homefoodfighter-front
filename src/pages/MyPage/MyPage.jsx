@@ -15,17 +15,19 @@ const ImagePreview = () => {
   const [userInfo, setUserInfo] = useState([]);
 
   useEffect(() => {
-    requestUser().then((res) => setUserInfo(res.data.result[0].nickname)) 
-  },[])
+    requestUser().then((res) => setUserInfo(res.data.result[0].nickname));
+  }, []);
 
   return (
     <div style={{ backgroundColor: 'white' }}>
-      <Header>
-        <Link to="/mypage/setting">
-          <S.Setting>
+      <Header
+        item={
+          <Link to="/mypage/setting">
             <img src={MyPageSetting} alt="Settings" />
-          </S.Setting>
-        </Link>
+          </Link>
+        }
+      >
+        {' '}
       </Header>
 
       <div
